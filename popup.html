@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Page Screenshot</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Full Page Screenshot</h2>
+    
+    <div id="infoBox" class="info-box hidden">
+      <div class="info-row"><span>Viewport:</span> <strong id="viewportDim">-</strong></div>
+      <div class="info-row"><span>Page Size:</span> <strong id="pageDim">-</strong></div>
+      <div class="info-row"><span>Pixel Ratio:</span> <strong id="dprVal">-</strong></div>
+    </div>
+
+    <button id="captureBtn">Capture Full Page</button>
+    
+    <div id="progressContainer" class="hidden">
+      <div class="progress-label">
+        <span>Status:</span>
+        <span id="progressText">0%</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div id="progressBar" class="progress-bar-fill"></div>
+      </div>
+      <div class="section-text" id="sectionText">Preparing page...</div>
+    </div>
+    
+    <button id="cancelBtn" class="hidden cancel-btn">Cancel</button>
+
+    <div id="resultContainer" class="result-container hidden">
+      <div class="result-header">Screenshot Downloaded</div>
+      <div class="result-details" id="resultDetails"></div>
+      <img id="resultPreview" class="result-preview" alt="Screenshot Preview" />
+    </div>
+
+    <div id="statusMessage" class="status-message hidden"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
