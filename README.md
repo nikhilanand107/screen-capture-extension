@@ -14,3 +14,7 @@ A Chrome extension that captures an entire webpage as one continuous screenshot.
 
 - `activeTab` and `scripting` allow the extension to inspect and capture the current tab.
 - `downloads` saves the completed screenshot to the local Downloads folder.
+
+## Sample
+![Full-page screenshot demo](screenshorts/sample1.png)
+![Full-page screenshot demo](screenshorts/sample2.png)
